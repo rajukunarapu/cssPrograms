@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aqua;
+            width:500px;
+            height:500px;
+            margin:10px;
+            padding: 20px;
+        }
+        #c1{
+            position:absolute;
+            top:60px;
+            left:50px;
+            background-color: chartreuse;
+            height:200px;
+            width:200px;
+            text-align: center;
+            line-height: 200px;
+            font-size:larger;
+            font-weight:bolder;
+             z-index: 15; 
+        }
+
+        #c2{
+            position:relative;
+            top: 40px;
+            left:40px;
+            background-color: chocolate;
+            height:200px;
+            width:200px;
+            margin-top: 20px;
+            text-align: center;
+            line-height:200px;
+            font-size:larger;
+            font-weight: bolder;
+            z-index:14    /*z-index high number specify which one display first*/
+           
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="c1">
+            Item 1
+        </div>
+        <div id="c2">
+            Item 2
+        </div>
+    </div>
+</body>
+</html>

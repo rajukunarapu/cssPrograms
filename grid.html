@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100vw;
+            height: 100vh;
+            padding: 40px;
+            background-color: lightblue;
+            text-align: center;
+            display: grid;
+            font-weight: bolder;
+            grid-template-columns: 150px 150px 150px;
+            grid-template-rows: 150px 150px 150px;
+            /* grid-gap:20px; */
+            row-gap: 20px;
+            column-gap: 20px;
+            justify-content: start;
+            /* horizontally spaces */
+            /* justify-items: start;  */
+            /* justify items is based on horizontal and it reuces width.if the value set to "center" the item goes to center horizontally. */
+            /* align-items:center; */
+            /* align items is based on vertical and reduces height. if the value set to start it goes to start of the item. */
+            align-content: start;
+            /* vetically space */
+            /* regarding to item styles */
+            /* line-height: 50px;     the height is taken from content height */
+            /* align-items: ; */
+            grid-template-areas: "Item1 Item1 Item2"
+                "Item1 Item1 Item2"
+
+        }
+
+        .container>div:nth-child(odd) {
+            background-color: chartreuse;
+        }
+
+        .container>div:nth-child(even) {
+            background-color: chocolate;
+        }
+
+        #c11 {
+            /* grid-column-start:1;   it based on column lines,column start at 1 line. */
+            /* grid-column-end:3    column end at 3 line */
+            /* same as above */
+            grid-column: 1/3;
+            /* grid-row-start: 1;
+            grid-row-end: 4; */
+            /* same as above */
+            grid-row: 1/3;
+            grid-area: Item1
+        }
+
+        #c2 {
+            grid-area: Item2;
+        }
+
+        /* #c3 {
+            align-self: flex-start;
+        }
+
+        #c4 {
+            align-self: flex-start
+        }
+
+        #c5 {
+            align-self: center;
+        }
+
+        #c6 {
+            align-self: flex-end;
+        } 
+        #c7 {
+            align-self: flex-end;
+        }
+        #c8 {
+            align-self: flex-end;
+        }
+        #c9 {
+            align-self: flex-end; 
+        }    */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="c1" id="c11">Item 1</div>
+        <div class="c1" id="c2">Item 2</div>
+        <div class="c1" id="c3">Item 3</div>
+        <div class="c1" id="c4">Item 4</div>
+        <div class="c1" id="c5">Item 5</div>
+        <div class="c1" id="c6">Item 6</div>
+        <div class="c1" id="c7">Item 7</div>
+        <div class="c1" id="c8">Item 8</div>
+        <div class="c1" id="c9">Item 9</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Example</title>
+    <style>
+        .container{
+            width:550px;
+            height:550px;
+            background-color:lightgray;
+            padding: 20px;
+        }
+
+        .c1{
+            float: left;    /*float should be in child */
+            height:150px;
+            width:150px;
+            background-color:cadetblue;
+        }
+        .c2{
+            margin-left: 20px;
+            float: left;    /*float should be in child */
+            height:150px;
+            width:150px;
+            background-color:blue;
+        }
+        .c3{
+            margin-left: 20px;
+            float: left;    /*float should be in child */
+            height:150px;
+            width:150px;
+            background-color:chartreuse;
+        }
+    
+
+        .c4{
+            margin-top: 200px;
+            float: left;    /*float should be in child */
+            height:150px;
+            width:150px;
+            background-color:deeppink;
+        }
+        .c5{
+            margin-top:200px;
+            margin-left: 200px;
+            float: left;    /*float should be in child */
+            height:150px;
+            width:150px;
+            background-color:darkturquoise;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="c1"></div>
+        <div class="c2"></div>
+        <div class="c3"></div>
+        <div class="c4"></div>
+        <div class="c5"></div>
+    </div>
+
+</body>
+</html>
+
+<!-- In this chapter we create a continer div and child.
+float describes the position of content i.e left , right.
+clear property used to clear the content and moved to next line (after the content) , 
+It has three values left, right and both.  -->

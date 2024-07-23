@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 20px;
+            text-align: center;
+            font-weight: bolder;
+            line-height: 300PX;
+            color: gold;
+        }
+
+        .ctnr1 {
+            height: 300px;
+            margin-bottom: 20px;
+            border-radius: 40px;
+            /* syntax: */
+            /* background-image:linear-gradient(direction,color stop1,color stop2...) */
+            /* top to bottom */
+            background-image: linear-gradient(orange, white, green);
+        }
+
+        .ctnr2 {
+            height: 300px;
+            margin-bottom: 20px;
+            border-radius: 40px;
+            /* bottom to top */
+            background-image: linear-gradient(to top, red, blue);
+        }
+
+        .ctnr3 {
+            height: 300px;
+            margin-bottom: 20px;
+            border-radius: 40px;
+            /* left to right */
+            background-image: linear-gradient(to right, black, white);
+        }
+
+        .ctnr4 {
+            height: 300px;
+            margin-bottom: 20px;
+            border-radius: 40px;
+            /* right to left */
+            background-image: linear-gradient(to left, yellow, green);
+        }
+
+        .ctnr5 {
+            height: 300px;
+            margin-bottom: 20px;
+            border-radius: 40px;
+            /* diagonal=left&top to right&bottom */
+            background-image: linear-gradient(to bottom right, brown, black);
+        }
+
+        .ctnr6 {
+            height: 300px;
+            margin-bottom: 20px;
+            border-radius: 40px;
+            /* diagonal=right&bottom to left&top */
+            background-image: linear-gradient(to left top, green, blue);
+        }
+
+        .ctnr7 {
+            height: 300px;
+            margin-bottom: 20px;
+            border-radius: 40px;
+            background-image: repeating-linear-gradient(red, blue 20%);
+            /* repeating-linear-gradient defines repeting the colors */
+        }
+
+        .ctnr8 {
+            height: 300px;
+            margin-bottom: 20px;
+            border-radius: 40px;
+            background-image: linear-gradient(180deg, red, yellow)
+        }
+
+        .ctnr9 {
+            height: 300px;
+            margin-bottom: 20px;
+            border-radius: 40px;
+            background-image: radial-gradient(blue, yellow);
+            /* radial defined by its center, the default shape is ellipse you can change into circle only. */
+        }
+
+        .ctnr10 {
+            height: 300px;
+            margin-bottom: 20PX;
+            border-radius: 40px;
+            color: black;
+            background-image: repeating-radial-gradient(red 10%, yellow 20%);
+        }
+
+        .ctnr11 {
+            height: 300px;
+            margin-bottom: 20px;
+            border-radius: 40px;
+            background-image: radial-gradient(circle, blue, lightgray);
+        }
+
+        .ctnr12 {
+            height: 300px;
+            margin-bottom: 20px;
+            border-radius: 40px;
+            background-image: conic-gradient(from 90deg, red 270 deg, blue);
+            /* started at 90 degrees and rotate clock wisely */
+        }
+
+        .ctnr13 {
+            height: 300px;
+            margin-bottom: 20px;
+            border-radius: 40px;
+            background-image: radial-gradient(circle, blue, lightgray);
+        }
+
+        .ctnr14 {
+            height: 300px;
+            border-radius: 40px;
+            background-image: radial-gradient(circle, blue, lightgray);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is an example of gradient colors:</h1>
+    <div class="container">
+        <div class="ctnr1">TOP TO BOTTOM(default)</div>
+        <div class="ctnr2">BOTTOM TO TOP</div>
+        <div class="ctnr3">LEFT TO RIGHT</div>
+        <div class="ctnr4">RIGHT TO LEFT</div>
+        <div class="ctnr5">LEFT&TOP TO RIGHT&BOTTOM</div>
+        <div class="ctnr6">RIGHT&BOTTOM TO LEFT&TOP</div>
+        <div class="ctnr7">COLOR REPEATATION</div>
+        <div class="ctnr8">180 DEGREES ANGLE</div>
+        <div class="ctnr9">RADIAL GRADIENT 1</div>
+        <div class="ctnr10">RADIAL GRADIENT 2</div>
+        <div class="ctnr11">RADIAL CIRCLE SHAPE</div>
+        <div class="ctnr12">conic 1</div>
+        <div class="ctnr13">conic 2</div>
+        <div class="ctnr14">conic 3</div>
+
+    </div>
+
+</body>
+
+</html>
