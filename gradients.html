@@ -84,6 +84,8 @@
             margin-bottom: 20px;
             border-radius: 40px;
             background-image: radial-gradient(blue, yellow);
+            /* syntax: */
+            /* background-image: radial-gradient(shape at position ,color 1 ,color 2,...); */
             /* radial defined by its center, the default shape is ellipse you can change into circle only. */
         }
 
@@ -92,7 +94,7 @@
             margin-bottom: 20PX;
             border-radius: 40px;
             color: black;
-            background-image: repeating-radial-gradient(red 10%, yellow 20%);
+            background-image: repeating-radial-gradient(red 10%, yellow 30%);
         }
 
         .ctnr11 {
@@ -104,23 +106,42 @@
 
         .ctnr12 {
             height: 300px;
-            margin-bottom: 20px;
+            margin-bottom: 60px;
             border-radius: 40px;
-            background-image: conic-gradient(from 90deg, red 270 deg, blue);
+            background-image: conic-gradient(red, blue);
             /* started at 90 degrees and rotate clock wisely */
+            /* syntax:  */
+            /* background-image: conic-gradient(from angle, at positon, color1 , color2,..); */
         }
 
         .ctnr13 {
-            height: 300px;
+            height: 200px;
+            width: 200px;
+            color: brown;
+            line-height: 200px;
             margin-bottom: 20px;
-            border-radius: 40px;
-            background-image: radial-gradient(circle, blue, lightgray);
+            border-radius: 50%;
+            background-image: conic-gradient(red, orange, yellow, green, blue, indigo, violet)
         }
 
         .ctnr14 {
-            height: 300px;
-            border-radius: 40px;
-            background-image: radial-gradient(circle, blue, lightgray);
+            height: 200px;
+            width: 200px;
+            color: blanchedalmond;
+            line-height: 200px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            background-image: conic-gradient(blue 0deg, blue 90deg, indigo 90deg, indigo 180deg, red 180deg, red 270deg, yellow 270deg)
+        }
+
+        .ctnr15 {
+            height: 200px;
+            width: 200px;
+            color: black;
+            line-height: 200px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            background-image: repeating-conic-gradient(blue 10%, red 20%)
         }
     </style>
 </head>
@@ -136,12 +157,14 @@
         <div class="ctnr6">RIGHT&BOTTOM TO LEFT&TOP</div>
         <div class="ctnr7">COLOR REPEATATION</div>
         <div class="ctnr8">180 DEGREES ANGLE</div>
+        <hr>
         <div class="ctnr9">RADIAL GRADIENT 1</div>
         <div class="ctnr10">RADIAL GRADIENT 2</div>
         <div class="ctnr11">RADIAL CIRCLE SHAPE</div>
         <div class="ctnr12">conic 1</div>
         <div class="ctnr13">conic 2</div>
         <div class="ctnr14">conic 3</div>
+        <div class="ctnr15">conic 4</div>
 
     </div>
 

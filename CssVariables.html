@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* gloabal variable, :root  used to create global variable and it has name and value, name must start with two dashesh*/
+        :root {
+            --var1: lightgray;
+            --var2: blue;
+            --var3: orange;
+        }
+
+        /* without using border-box every item has no equal height cuz some items have padding that will effect item height,
+        In order to solve this problem by using border box. border box create equal height for every item even though it has extra height.  */
+        * {
+            box-sizing: border-box;
+            font-weight: bolder;
+            font-size: 17px;
+        }
+
+        .container {
+            width: 400px;
+            height: 500px;
+            background-color: var(--var1);
+        }
+
+        .class1 {
+            padding: 20px;
+            height: 100px;
+            background-color: var(--var2);
+        }
+
+        .class2 {
+            height: 100px;
+            padding: 40px;
+            background-color: var(--var3);
+        }
+
+        .class3 {
+            height: 100px;
+            background-color: var(--var2);
+        }
+
+        .class4 {
+            height: 100px;
+            background-color: var(--var3);
+        }
+
+        .class5 {
+            /* local variable used only inside the selector */
+            --localVar: red;
+            height: 100px;
+            padding: 40px;
+            background-color: var(--localVar);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="class1">Item 1</div>
+        <div class="class2">Item 2</div>
+        <div class="class3">Item 3</div>
+        <div class="class4">Item 4</div>
+        <div class="class5">Item 5</div>
+    </div>
+</body>
+
+</html>
