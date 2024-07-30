@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class1 {
+            /* display: inline; */
+            margin-top: 100px;
+        }
+
+        a {
+            /* float: left; */
+            text-decoration: none;
+            border: 1px solid lightgray;
+            padding: 10px 15px;
+            /* margin:5px; */
+            color: black;
+        }
+
+        a.active {
+            background-color: darkgreen;
+        }
+
+        a:hover:not(.active) {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="class1">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+    </div>
+</body>
+
+</html>

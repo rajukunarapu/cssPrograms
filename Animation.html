@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+            /* it takes from keyframe name */
+            animation-name: example1;
+            animation-duration: 2s;
+            /* animation-delay: 2s; */
+            /* animation iteration count specify number of times that should be revolve.  */
+            animation-iteration-count: 10;
+            /* animation-timing-function specify the moving speed */
+            animation-timing-function: linear;
+            /* animation-direction specify the direction. */
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes example1 {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            20% {
+                background-color: aqua;
+                left: 150px;
+                top: 0px;
+            }
+
+            40% {
+                background-color: black;
+                left: 300px;
+                top: 0px;
+            }
+
+            60% {
+                background-color: cornsilk;
+                left: 300px;
+                top: 200px;
+            }
+
+            80% {
+                background-color: darkgreen;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: salmon;
+                left: 0;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">Item 1</div>
+</body>
+
+</html>

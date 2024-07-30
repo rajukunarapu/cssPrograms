@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropbtn {
+            padding: 20px;
+            font-size: 15px;
+            text-align: right;
+            background-color: blue;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .content {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            box-shadow: 0px 2px 3px 0px aqua;
+            background-color: azure;
+            z-index: 1;
+        }
+
+        .content li {
+            list-style-type: none;
+            display: block;
+            padding: 12px 16px;
+        }
+
+        .dropdown:hover .content {
+            display: block;
+        }
+
+        li:hover {
+            transform: translateX(-20px);
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">DROPDOWN:</button>
+        <div class="content">
+            <ul>
+                <li class="class1">Link 1</li>
+                <li class="class1">Link 2</li>
+                <li class="class1">Link 3</li>
+                <li class="class1">Link 4</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
